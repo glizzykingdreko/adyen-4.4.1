@@ -1,0 +1,19 @@
+{
+  "name": "adyen-4.4.1",
+  "version": "1.0.0",
+  "description": "The adyen-4.4.1 npm module enables encryption of sensitive card data using Adyen's v4.4.1 method with a NodeJS implementation.",
+  "url": "https://github.com/glizzykingdreko/adyen-4.4.1.git",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test_encryption.js"
+  },
+  "author": "glizzykingdreko <glizzykingdreko@protonmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "jwk-to-pem": "^2.0.5"
+  }
+}
