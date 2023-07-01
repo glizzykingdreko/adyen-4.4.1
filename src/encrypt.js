@@ -31,7 +31,7 @@ function encryptCardData(
         encryptedSecurityCode: {"cvc":cvc,"generationtime":getCurrentTimestamp(),"cvcBind":"1","activate":"4","referrer":"https://checkoutshopper-live.adyen.com/checkoutshopper/securedfields/" + stripeKey +"/4.4.1/securedFields.html?type=card&d=aHR0cHM6Ly93d3cubXl0aGVyZXNhLmNvbQ==","cvcFieldFocusCount":"4","cvcFieldLog":"fo@122,cl@123,KN@136,KN@138,KN@140,fo@11204,cl@11205,ch@11221,bl@11221,fo@33384,bl@33384,fo@50318,cl@50319,cl@50321,KN@50334,KN@50336,KN@50336","cvcFieldClickCount":"4","cvcFieldKeyCount":"6","cvcFieldChangeCount":"1","cvcFieldBlurCount":"2","deactivate":"2"}
     }
     
-    obj = new Adyen(adyenKey)
+    const obj = new Adyen(adyenKey)
     obj.generateKey()
     
     for (const [key, value] of Object.entries(cardDetail)) {
